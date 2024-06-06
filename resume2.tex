@@ -1,0 +1,252 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Himanshi Prajapati} \\[4pt]
+\\
+\textcolor[HTML]{371e77}{\underline{\href{mailto:phimanshi379@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} phimanshi379@gmail.com}} $|$}
+
+\textcolor[HTML]{371e77}{\href{tel:+919569968742}{\raisebox{-0.05\height}{\faMobile} +91 9569968742}}
+
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/Himanshiprajapati}{\raisebox{-0.05\height}{\faGithub} My GitHub Profile}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/himanshi-prajapati-b525b223b/}{\raisebox{-0.05\height}{\faLinkedin} My Linkedin}}}
+\textcolor[HTML]{371e77}{\underline{\href{https://leetcode.com/u/Himanshiprajapati/}{\raisebox{-0.05\height}{\faleetcode} LeetCode Profile}}}
+\end{tabularx}
+
+
+
+% Education
+\vspace{10pt}
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Dr. A.P.J. Abdul Kalam Technical University, Lucknow(U.P.)} & \hfill \color[HTML]{371e77}Nov.2021- Present \\
+\color[HTML]{371e77} B.Tech in Computer Science and Engineering & \hfill \color[HTML]{4B28A4} \textit{\textbf{SGPA: 8.8}} \\
+\multicolumn{2}{@{}X@{}}{Relevant Courses: Maths and Data Science (Python),   Algorithms and Data Structures}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{B.N.S.D. Shiksha Niketan Inter College, Kanpur} & \hfill \color[HTML]{371e77} 2019-20 \\
+\color[HTML]{371e77} Intermediate & \hfill \color[HTML]{4B28A4} \textit{\textbf{CGPA: 8.0}} \\
+\multicolumn{2}{@{}X@{}}{UP Board}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{St.Joseph's Eng. Med. Sen. Sec. School, Mahoba} & \hfill \color[HTML]{371e77} 2017-18 \\
+\color[HTML]{371e77} High School & \hfill \color[HTML]{4B28A4} \textit{\textbf{CGPA: 8.84}} \\
+\multicolumn{2}{@{}X@{}}{CBSE Board}
+\end{tabularx}
+
+
+
+% Skills
+\vspace{10pt}
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} C, Python, PHP, SQL, JavaScript, C\#
+, Bash \\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} VS Code Editor, XAMPP, HTML, CSS, Bootstrap, My SQL, Unity, Blender,Flask, Django, Git\\[3pt]
+\color[HTML]{1C033C}\textbf{Certifications:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} {{NPTEL: Google Cloud Computing, Data Analytics With Python, Developing Soft Skills and Personality}}.
+
+
+
+
+
+% Projects
+\vspace{10pt}
+
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/Himanshiprajapati/MyTube}{MyTube}}} \hfill \color[HTML]{371e77} Jun. 2024 - Present\\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Clone of YouTube }} \hfill \color[HTML]{4B28A4} \textit{React, Node.js, mongodb, Express, Bootstrap, HTML, CSS, GitHub}\\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        
+        \item \textcolor{black} {Implementing features such as video uploading, commenting, and user authentication, ensuring seamless interaction and functionality to the original YouTube platform.}
+    \end{itemize}
+    \end{minipage}\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/Himanshiprajapati/MyTube}{WeatherEmailer}}} \hfill \color[HTML]{371e77} Apr 2024 - Apr 2024\\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Website to send email of weather Report }} \hfill \color[HTML]{4B28A4} \textit{PhP, APIs, Bootstrap, HTML, CSS, GitHub}\\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        
+        \item \textcolor{black} {Developed a webpage integrating weather.io API to fetch and send weather reports to user-entered emails based on location input.}
+    \end{itemize}
+    \end{minipage}\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/Himanshiprajapati/InternMaster}{IntentMaster}}} \hfill \color[HTML]{371e77} Jul. 2023 - Aug. 2023\\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Intent Analyzer }} \hfill \color[HTML]{4B28A4} \textit{NLTK, scikit-learn, TensorFlow, spaCy, and Flask}\\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item  \textcolor{black} {Engineered "Intent Analyzer," a precise NLP system for user intent extraction from text inputs.}
+
+
+        \item \textcolor{black} { Utilized advanced technologies to deliver scalable solutions for diverse NLP and ML challenges.}
+    \end{itemize}
+    \end{minipage}\end{tabularx}
+    
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/Himanshiprajapati/Online-Voting-System}{My Vote}}} \hfill \color[HTML]{371e77} Jan. 2023 - Apr. 2023\\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Personalized Online Voting System }} \hfill \color[HTML]{4B28A4} \textit{PhP, My SQL, JavaScript, HTML, CSS, Bootstrap, XAMPP, GitHub}\\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor{black}   {Engineered dynamic online voting in PHP with hashed password encryption for robust security.}
+        \item \textcolor{black} {Implemented interactive features prioritizing security, resulting in a seamlessly functional voting platform.}
+    \end{itemize}
+    \end{minipage}\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/Himanshiprajapati/MetaCircuit-Innovation}{MetaCircuitInnovation}}} \hfill \color[HTML]{371e77} July. 2022 - Sep.2022\\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Digital circuit 
+       laboratory in Metaverse}} \hfill \color[HTML]{4B28A4} \textit{C\#, Python, Unity, Blender, GitHub}\\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+    \item \textcolor{black} {Created an innovative VR digital circuit lab in the Metaverse, with technical skill for immersive learning.}
+    \item \textcolor{black}{Developed a VR digital circuit experience, enhancing experimentation and education within the Metaverse environment.}
+\end{itemize}
+
+    \end{minipage}\end{tabularx}
+% Experience
+\vspace{-10pt} 
+\section{Experience}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Presence Learning Pvt. Ltd.} \hfill \color[HTML]{371e77}Oct. 2022 - Dec. 2022 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Web Developer Intern}} \hfill \color[HTML]{4B28A4} \textit{PHP, JavaScript, SQL Server, HTML, CSS, Bootstrap, jQuery} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor{black}{{Managed overtime requests and approvals for 2,000+ employees via PHP backend systems.}}
+        \item \textcolor{black}{{Implemented HTML, JavaScript, and Bootstrap to display graphs and logs for 6,000+ monthly requests, reducing loading times by 70\%.}}
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+% Achievement
+\vspace{10pt} % Adjust as needed
+
+\section{Achievements}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{ IEEECS Bangalore's Hack "The Metaverse hackathon"} \hfill \color[HTML]{371e77} Jul. 2023 - Sep. 2023 \\[3pt]
+\color[HTML]{371e77}\textbf{\textit{IIIT Bangalore}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor{black} {Proposal accepted for "MetaCircuit Innovations" project at IEEECS Bangalore's Hack The Metaverse hackathon hosted by IIIT Bangalore and successfully cleared Round 1 also.}
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+% Leadership and Volunteering
+\vspace{10pt}
+\section{Leadership and Volunteering}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{ IEEE Student Branch, RECM
+   } \hfill \color[HTML]{371e77} Jul. 2023 - Jul. 2024 \\[3pt]
+\color[HTML]{371e77}\textbf{\textit{Vice Chairperson}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item\textcolor{black} { Led and organized activities for the IEEE Student Branch.}
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\vspace{1pt} % Adjust as needed
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{  Mega Job Fair 2022, RECM
+   } \hfill \color[HTML]{371e77} Apr 2022 \\[3pt]
+\color[HTML]{371e77}\textbf{\textit{Volunteer}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor{black} {Played a vital role in orchestrating a highly successful job fair, contributing to its seamless execution and positive outcomes}
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{  IEEECS Student Branch, RECM
+   
+
+   } \hfill \color[HTML]{371e77} Jul. 2023 - Dec.2023\\[3pt]
+\color[HTML]{371e77}\textbf{\textit{Member}} \\[3pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor{black} {Energetically participated in driving forward the initiatives of the IEEE Computer Society, actively contributing to its growth and impact}
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+
+
+
+\end{document}
